@@ -1,0 +1,15 @@
+<%= form_for @oferta , url: {action: "create"} do |f| %>
+
+  <div class="field">
+    <%= f.label :motivo %><br>
+    <%= f.text_field :motivo, required: true, placeholder: 'Ingrese el motivo'%>
+  </div>
+  <div class="field">
+    <%= f.label :monto %><br>
+    <%= f.number_field :monto, required: true, placeholder: 'Ingrese el monto'%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
